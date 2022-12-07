@@ -1,0 +1,16 @@
+
+ BART With fine tuning: 
+{'bert_score': 0.8598668437416308, 'rouge': {'rouge1': 0.33579063261913145, 'rouge2': 0.08399293562028079, 'rougeL': 0.20895212446715083, 'rougeLsum': 0.20900970578095468}}
+ BART Without fine tuning: 
+{'bert_score': 0.848121858367296, 'rouge': {'rouge1': 0.25747594672418805, 'rouge2': 0.04507039543826688, 'rougeL': 0.1568592348807057, 'rougeLsum': 0.1566520944982827}}
+ Pegasus Without fine tuning: 
+{'bert_score': 0.8403162172186041, 'rouge': {'rouge1': 0.22570710329885524, 'rouge2': 0.03795832803166853, 'rougeL': 0.14663050353529233, 'rougeLsum': 0.14652927805655072}}
+ Pegasus With fine tuning: 
+{'bert_score': 0.8478397799429492, 'rouge': {'rouge1': 0.2817757941036361, 'rouge2': 0.050651591944155167, 'rougeL': 0.16865473807140074, 'rougeLsum': 0.16865389812987963}}
+ T5 Without fine tuning 1: 
+{'bert_score': 0.8448693578209833, 'rouge': {'rouge1': 0.1334586024927229, 'rouge2': 0.026366265957030097, 'rougeL': 0.10420210544148405, 'rougeLsum': 0.10423339316307675}}
+ T5 With fine tuning 1: 
+{'bert_score': 0.8532780062093913, 'rouge': {'rouge1': 0.14263765949832125, 'rouge2': 0.033526181964739304, 'rougeL': 0.11254643399476433, 'rougeLsum': 0.11247544699230178}}
+
+ T5 Without fine tuning: 
+{'bert_score': 0.8281007556714745, 'rouge': {'rouge1': 0.18630636056884214, 'rouge2': 0.030160372450848218, 'rougeL': 0.12314919121479131, 'rougeLsum': 0.12330384237679726}}

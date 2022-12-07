@@ -1,0 +1,5 @@
+
+ Extractive Sentence Cluster: 
+{'sem_f1_score': 0.34892280410074034, 'bert_f1_score': 0.8259092536423537, 'rouge': {'rouge1': 0.26877586577614976, 'rouge2': 0.04663675515537748, 'rougeL': 0.1363121574933454, 'rougeLsum': 0.13625293478730022}}
+ Extractive Com Sentence: 
+{'sem_f1_score': 0.3809967793784069, 'bert_f1_score': 0.8315189119135395, 'rouge': {'rouge1': 0.2817842526673183, 'rouge2': 0.054514872912198115, 'rougeL': 0.1415765424429766, 'rougeLsum': 0.14160285447108892}}

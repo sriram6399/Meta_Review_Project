@@ -1,0 +1,15 @@
+
+ BART Extractive fine tuning com_sentence: 
+{'bert_score': 0.8569483087163106, 'rouge': {'rouge1': 0.32127682229114773, 'rouge2': 0.08317215762136519, 'rougeL': 0.20552247738944868, 'rougeLsum': 0.20548266133088244}, 'sem_f1_score': 0.4131980238035277}
+ BART Extractive fine tuning sentence_cluster: 
+{'bert_score': 0.85714686849964, 'rouge': {'rouge1': 0.3206168809238634, 'rouge2': 0.08326659228238154, 'rougeL': 0.2066379151051715, 'rougeLsum': 0.20680682736853623}, 'sem_f1_score': 0.41146464952512896}
+ Pegasus Extractive fine tuning sentence_cluster: 
+{'bert_score': 0.8438044147235211, 'rouge': {'rouge1': 0.2433661789307415, 'rouge2': 0.043734540060970925, 'rougeL': 0.161047792269857, 'rougeLsum': 0.16109614887062165}, 'sem_f1_score': 0.37048057165184506}
+ Pegasus Extractive fine tuning com_sentence: 
+{'bert_score': 0.8469209747615262, 'rouge': {'rouge1': 0.26740806035495046, 'rouge2': 0.050310840292645875, 'rougeL': 0.16902499241633087, 'rougeLsum': 0.1689389494303723}, 'sem_f1_score': 0.3871959013610764}
+ T5 Extractive fine tuning com_sentence: 
+{'bert_score': 0.8293532163740318, 'rouge': {'rouge1': 0.17693829103958666, 'rouge2': 0.03062315509596099, 'rougeL': 0.11984764305166595, 'rougeLsum': 0.11998993157598153}, 'sem_f1_score': 0.32160252406499196}
+ T5 Extractive fine tuning sent_cluster: 
+{'bert_score': 0.8062595053810939, 'rouge': {'rouge1': 0.12781750652423318, 'rouge2': 0.01788398030810654, 'rougeL': 0.09324954225106592, 'rougeLsum': 0.09333206146766086}, 'sem_f1_score': 0.25310250649843286}
+ T5 Extractive fine tuning sent_cluster: 
+{'bert_score': 0.8062595049633043, 'rouge': {'rouge1': 0.12802421116277107, 'rouge2': 0.01801864086671795, 'rougeL': 0.09333176624882164, 'rougeLsum': 0.09331671309273745}, 'sem_f1_score': 0.25310250649843286}

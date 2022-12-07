@@ -1,0 +1,614 @@
+loading weights file pytorch_model.bin from cache at C:\Users\gutti/.cache\huggingface\hub\models--roberta-large\snapshots\5069d8a2a32a7df4c69ef9b56348be04152a2341\pytorch_model.bin
+All the weights of RobertaModel were initialized from the model checkpoint at roberta-large.
+If your task is similar to the task the model of the checkpoint was trained on, you can already use RobertaModel for predictions without further training.
+Trainer is attempting to log a value of "[0.8493491411209106, 0.8989739418029785, 0.8705226182937622, 0.8080363869667053, 0.823417603969574, 0.8175283074378967, 0.8561965227127075, 0.783008873462677, 0.805370032787323, 0.867462158203125, 0.7876495122909546, 0.9210127592086792, 0.7344657182693481]" of type <class 'list'> for key "eval/precision" as a scalar. This invocation of Tensorboard's writer.add_scalar() is incorrect so we dropped this attribute.
+Trainer is attempting to log a value of "[0.8233053684234619, 0.8995374441146851, 0.8920867443084717, 0.8284132480621338, 0.8131595849990845, 0.8124948740005493, 0.8149930834770203, 0.8007891178131104, 0.8127948045730591, 0.8077245950698853, 0.8389785885810852, 0.8393330574035645, 0.8159095644950867]" of type <class 'list'> for key "eval/recall" as a scalar. This invocation of Tensorboard's writer.add_scalar() is incorrect so we dropped this attribute.
+Trainer is attempting to log a value of "[0.8361244797706604, 0.899255633354187, 0.881172776222229, 0.8180980086326599, 0.8182564377784729, 0.8150038123130798, 0.8350868821144104, 0.7917992472648621, 0.8090654015541077, 0.8365283012390137, 0.8125041723251343, 0.8782779574394226, 0.773048460483551]" of type <class 'list'> for key "eval/f1" as a scalar. This invocation of Tensorboard's writer.add_scalar() is incorrect so we dropped this attribute.
+Trainer is attempting to log a value of "roberta-large_L17_no-idf_version=0.3.11(hug_trans=4.22.1)" of type <class 'str'> for key "eval/hashcode" as a scalar. This invocation of Tensorboard's writer.add_scalar() is incorrect so we dropped this attribute.
+{'eval_loss': 4.941329479217529, 'eval_precision': [0.8493491411209106, 0.8989739418029785, 0.8705226182937622, 0.8080363869667053, 0.823417603969574, 0.8175283074378967, 0.8561965227127075, 0.783008873462677, 0.805370032787323, 0.867462158203125, 0.7876495122909546, 0.9210127592086792, 0.7344657182693481], 'eval_recall': [0.8233053684234619, 0.8995374441146851, 0.8920867443084717, 0.8284132480621338, 0.8131595849990845, 0.8124948740005493, 0.8149930834770203, 0.8007891178131104, 0.8127948045730591, 0.8077245950698853, 0.8389785885810852, 0.8393330574035645, 0.8159095644950867], 'eval_f1': [0.8361244797706604, 0.899255633354187, 0.881172776222229, 0.8180980086326599, 0.8182564377784729, 0.8150038123130798, 0.8350868821144104, 0.7917992472648621, 0.8090654015541077, 0.8365283012390137, 0.8125041723251343, 0.8782779574394226, 0.773048460483551], 'eval_hashcode': 'roberta-large_L17_no-idf_version=0.3.11(hug_trans=4.22.1)', 'eval_runtime': 227.5259, 'eval_samples_per_second': 0.057, 'eval_steps_per_second': 0.022, 'epoch': 1.0}
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 4/4 [05:55<00:00, 95.13s/it]The following columns in the evaluation set don't have a corresponding argument in `BartForConditionalGeneration.forward` and have been ignored: meta_review, review, __index_level_0__. If meta_review, review, __index_level_0__ are not expected by `BartForConditionalGeneration.forward`,  you can safely ignore this message.        
+***** Running Evaluation *****
+  Num examples = 13
+  Batch size = 3
+                                                                                                                                                                    loading file vocab.json from cache at C:\Users\gutti/.cache\huggingface\hub\models--facebook--bart-large-cnn\snapshots\c5121e42f57eca153aea31729f71cbedcd77a656\vocab.json
+loading file merges.txt from cache at C:\Users\gutti/.cache\huggingface\hub\models--facebook--bart-large-cnn\snapshots\c5121e42f57eca153aea31729f71cbedcd77a656\merges.txt
+loading file added_tokens.json from cache at None
+loading file special_tokens_map.json from cache at None
+loading file tokenizer_config.json from cache at None
+loading configuration file config.json from cache at C:\Users\gutti/.cache\huggingface\hub\models--facebook--bart-large-cnn\snapshots\c5121e42f57eca153aea31729f71cbedcd77a656\config.json
+Model config BartConfig {
+  "_name_or_path": "facebook/bart-large-cnn",
+  "_num_labels": 3,
+  "activation_dropout": 0.0,
+  "activation_function": "gelu",
+  "add_final_layer_norm": false,
+  "architectures": [
+    "BartForConditionalGeneration"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 0,
+  "classif_dropout": 0.0,
+  "classifier_dropout": 0.0,
+  "d_model": 1024,
+  "decoder_attention_heads": 16,
+  "decoder_ffn_dim": 4096,
+  "decoder_layerdrop": 0.0,
+  "decoder_layers": 12,
+  "decoder_start_token_id": 2,
+  "dropout": 0.1,
+  "early_stopping": true,
+  "encoder_attention_heads": 16,
+  "encoder_ffn_dim": 4096,
+  "encoder_layerdrop": 0.0,
+  "encoder_layers": 12,
+  "eos_token_id": 2,
+  "force_bos_token_to_be_generated": true,
+  "forced_bos_token_id": 0,
+  "forced_eos_token_id": 2,
+  "gradient_checkpointing": false,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1",
+    "2": "LABEL_2"
+  },
+  "init_std": 0.02,
+  "is_encoder_decoder": true,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1,
+    "LABEL_2": 2
+  },
+  "length_penalty": 2.0,
+  "max_length": 142,
+  "max_position_embeddings": 1024,
+  "min_length": 56,
+  "model_type": "bart",
+  "no_repeat_ngram_size": 3,
+  "normalize_before": false,
+  "num_beams": 4,
+  "num_hidden_layers": 12,
+  "output_past": true,
+  "pad_token_id": 1,
+  "prefix": " ",
+  "scale_embedding": false,
+  "task_specific_params": {
+    "summarization": {
+      "early_stopping": true,
+      "length_penalty": 2.0,
+      "max_length": 142,
+      "min_length": 56,
+      "no_repeat_ngram_size": 3,
+      "num_beams": 4
+    }
+  },
+  "transformers_version": "4.22.1",
+  "use_cache": true,
+  "vocab_size": 50264
+}
+
+loading configuration file config.json from cache at C:\Users\gutti/.cache\huggingface\hub\models--facebook--bart-large-cnn\snapshots\c5121e42f57eca153aea31729f71cbedcd77a656\config.json
+Model config BartConfig {
+  "_num_labels": 3,
+  "activation_dropout": 0.0,
+  "activation_function": "gelu",
+  "add_final_layer_norm": false,
+  "architectures": [
+    "BartForConditionalGeneration"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 0,
+  "classif_dropout": 0.0,
+  "classifier_dropout": 0.0,
+  "d_model": 1024,
+  "decoder_attention_heads": 16,
+  "decoder_ffn_dim": 4096,
+  "decoder_layerdrop": 0.0,
+  "decoder_layers": 12,
+  "decoder_start_token_id": 2,
+  "dropout": 0.1,
+  "early_stopping": true,
+  "encoder_attention_heads": 16,
+  "encoder_ffn_dim": 4096,
+  "encoder_layerdrop": 0.0,
+  "encoder_layers": 12,
+  "eos_token_id": 2,
+  "force_bos_token_to_be_generated": true,
+  "forced_bos_token_id": 0,
+  "forced_eos_token_id": 2,
+  "gradient_checkpointing": false,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1",
+    "2": "LABEL_2"
+  },
+  "init_std": 0.02,
+  "is_encoder_decoder": true,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1,
+    "LABEL_2": 2
+  },
+  "length_penalty": 2.0,
+  "max_length": 142,
+  "max_position_embeddings": 1024,
+  "min_length": 56,
+  "model_type": "bart",
+  "no_repeat_ngram_size": 3,
+  "normalize_before": false,
+  "num_beams": 4,
+  "num_hidden_layers": 12,
+  "output_past": true,
+  "pad_token_id": 1,
+  "prefix": " ",
+  "scale_embedding": false,
+  "task_specific_params": {
+    "summarization": {
+      "early_stopping": true,
+      "length_penalty": 2.0,
+      "max_length": 142,
+      "min_length": 56,
+      "no_repeat_ngram_size": 3,
+      "num_beams": 4
+    }
+  },
+  "transformers_version": "4.22.1",
+  "use_cache": true,
+  "vocab_size": 50264
+}
+
+loading weights file pytorch_model.bin from cache at C:\Users\gutti/.cache\huggingface\hub\models--facebook--bart-large-cnn\snapshots\c5121e42f57eca153aea31729f71cbedcd77a656\pytorch_model.bin
+All model checkpoint weights were used when initializing BartForConditionalGeneration.
+
+All the weights of BartForConditionalGeneration were initialized from the model checkpoint at facebook/bart-large-cnn.
+If your task is similar to the task the model of the checkpoint was trained on, you can already use BartForConditionalGeneration for predictions without further training.
+[-4.686239719390869, -2.09580659866333, -2.302382469177246, -4.605395317077637, -4.730381965637207, -4.540505409240723, -4.54653263092041, -4.750996112823486, -5.384556770324707, -4.610936164855957, -3.7885630130767822, -3.922053337097168, -5.252018451690674]
+Trainer is attempting to log a value of "[0.8493491411209106, 0.8989739418029785, 0.8705226182937622, 0.8080363869667053, 0.823417603969574, 0.8175283074378967, 0.8561965227127075, 0.7780688405036926, 0.805370032787323, 0.867462158203125, 0.9232802987098694, 0.9212732911109924, 0.762679398059845]" of type <class 'list'> for key "eval/precision" as a scalar. This invocation of Tensorboard's writer.add_scalar() is incorrect so we dropped this attribute.
+Trainer is attempting to log a value of "[0.8233053684234619, 0.8995374441146851, 0.8920867443084717, 0.8284132480621338, 0.8131595849990845, 0.8124948740005493, 0.8149930834770203, 0.7826995849609375, 0.8127948045730591, 0.8077245950698853, 0.8533976078033447, 0.8532415628433228, 0.8126986026763916]" of type <class 'list'> for key "eval/recall" as a scalar. This invocation of Tensorboard's writer.add_scalar() is incorrect so we dropped this attribute.
+Trainer is attempting to log a value of "[0.8361244797706604, 0.899255633354187, 0.881172776222229, 0.8180980086326599, 0.8182564377784729, 0.8150038123130798, 0.8350868821144104, 0.7803773880004883, 0.8090654015541077, 0.8365283012390137, 0.8869646191596985, 0.8859533071517944, 0.7868949174880981]" of type <class 'list'> for key "eval/f1" as a scalar. This invocation of Tensorboard's writer.add_scalar() is incorrect so we dropped this attribute.
+Trainer is attempting to log a value of "roberta-large_L17_no-idf_version=0.3.11(hug_trans=4.22.1)" of type <class 'str'> for key "eval/hashcode" as a scalar. This invocation of Tensorboard's writer.add_scalar() is incorrect so we dropped this attribute.
+{'eval_loss': 4.92949914932251, 'eval_precision': [0.8493491411209106, 0.8989739418029785, 0.8705226182937622, 0.8080363869667053, 0.823417603969574, 0.8175283074378967, 0.8561965227127075, 0.7780688405036926, 0.805370032787323, 0.867462158203125, 0.9232802987098694, 0.9212732911109924, 0.762679398059845], 'eval_recall': [0.8233053684234619, 0.8995374441146851, 0.8920867443084717, 0.8284132480621338, 0.8131595849990845, 0.8124948740005493, 0.8149930834770203, 0.7826995849609375, 0.8127948045730591, 0.8077245950698853, 0.8533976078033447, 0.8532415628433228, 0.8126986026763916], 'eval_f1': [0.8361244797706604, 0.899255633354187, 0.881172776222229, 0.8180980086326599, 0.8182564377784729, 0.8150038123130798, 0.8350868821144104, 0.7803773880004883, 0.8090654015541077, 0.8365283012390137, 0.8869646191596985, 0.8859533071517944, 0.7868949174880981], 'eval_hashcode': 'roberta-large_L17_no-idf_version=0.3.11(hug_trans=4.22.1)', 'eval_runtime': 220.0904, 'eval_samples_per_second': 0.059, 'eval_steps_per_second': 0.023, 'epoch': 2.0}
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 4/4 [09:36<00:00, 95.13s/it] 
+
+Training completed. Do not forget to share your model on huggingface.co/models =)
+
+
+{'train_runtime': 576.1533, 'train_samples_per_second': 0.042, 'train_steps_per_second': 0.007, 'train_loss': 5.869139671325684, 'epoch': 2.0}
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 4/4 [09:36<00:00, 144.02s/it] 
+Saving model checkpoint to models/trainer.h5
+Configuration saved in models/trainer.h5\config.json
+Model weights saved in models/trainer.h5\pytorch_model.bin
+tokenizer config file saved in models/trainer.h5\tokenizer_config.json
+Special tokens file saved in models/trainer.h5\special_tokens_map.json
+PS C:\Users\gutti\Documents\NLP\NLP_Works\Project>  c:; cd 'c:\Users\gutti\Documents\NLP\NLP_Works\Project'; & 'C:\Users\gutti\AppData\Local\Programs\Python\Python39\python.exe' 'c:\Users\gutti\.vscode\extensions\ms-python.python-2022.16.0\pythonFiles\lib\python\debugpy\adapter/../..\debugpy\launcher' '52868' '--' 'c:\Users\gutti\Documents\NLP\NLP_Works\Project\BART.py'
+  0%|                                                                                                                                         | 0/1 [00:00<?, ?ba/s]C:\Users\gutti\AppData\Local\Programs\Python\Python39\lib\site-packages\transformers\tokenization_utils_base.py:3542: UserWarning: `as_target_tokenizer` is deprecated and will be removed in v5 of Transformers. You can tokenize your labels by using the argument `text_target` of the regular `__call__` method (either in the same call as your input texts if you use the same keyword arguments, or in a separate call.
+  warnings.warn(
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:01<00:00,  1.21s/ba]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  2.60ba/s]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  3.28ba/s]
+The following columns in the training set don't have a corresponding argument in `BartForConditionalGeneration.forward` and have been ignored: review, meta_review, __index_level_0__. If review, meta_review, __index_level_0__ are not expected by `BartForConditionalGeneration.forward`,  you can safely ignore this message.
+C:\Users\gutti\AppData\Local\Programs\Python\Python39\lib\site-packages\transformers\optimization.py:306: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning       
+  warnings.warn(
+***** Running training *****
+  Num examples = 324
+  Num Epochs = 2
+  Instantaneous batch size per device = 3
+  Total train batch size (w. parallel, distributed & accumulation) = 6
+  Gradient Accumulation steps = 2
+  Total optimization steps = 108
+  0%|                                                                                                                                       | 0/108 [00:00<?, ?it/s]You're using a BartTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+ 50%|███████████████████████████████████████████████████████████████                                                               | 54/108 [57:07<52:30, 58.35s/it]The following columns in the evaluation set don't have a corresponding argument in `BartForConditionalGeneration.forward` and have been ignored: review, meta_review, __index_level_0__. If review, meta_review, __index_level_0__ are not expected by `BartForConditionalGeneration.forward`,  you can safely ignore this message.        
+***** Running Evaluation *****
+  Num examples = 82
+  Batch size = 3
+                                                                                                                                                                    loading file vocab.json from cache at C:\Users\gutti/.cache\huggingface\hub\models--facebook--bart-large-cnn\snapshots\c5121e42f57eca153aea31729f71cbedcd77a656\vocab.json
+loading file merges.txt from cache at C:\Users\gutti/.cache\huggingface\hub\models--facebook--bart-large-cnn\snapshots\c5121e42f57eca153aea31729f71cbedcd77a656\merges.txt
+loading file added_tokens.json from cache at None
+loading file special_tokens_map.json from cache at None
+loading file tokenizer_config.json from cache at None
+loading configuration file config.json from cache at C:\Users\gutti/.cache\huggingface\hub\models--facebook--bart-large-cnn\snapshots\c5121e42f57eca153aea31729f71cbedcd77a656\config.json
+Model config BartConfig {
+  "_name_or_path": "facebook/bart-large-cnn",
+  "_num_labels": 3,
+  "activation_dropout": 0.0,
+  "activation_function": "gelu",
+  "add_final_layer_norm": false,
+  "architectures": [
+    "BartForConditionalGeneration"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 0,
+  "classif_dropout": 0.0,
+  "classifier_dropout": 0.0,
+  "d_model": 1024,
+  "decoder_attention_heads": 16,
+  "decoder_ffn_dim": 4096,
+  "decoder_layerdrop": 0.0,
+  "decoder_layers": 12,
+  "decoder_start_token_id": 2,
+  "dropout": 0.1,
+  "early_stopping": true,
+  "encoder_attention_heads": 16,
+  "encoder_ffn_dim": 4096,
+  "encoder_layerdrop": 0.0,
+  "encoder_layers": 12,
+  "eos_token_id": 2,
+  "force_bos_token_to_be_generated": true,
+  "forced_bos_token_id": 0,
+  "forced_eos_token_id": 2,
+  "gradient_checkpointing": false,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1",
+    "2": "LABEL_2"
+  },
+  "init_std": 0.02,
+  "is_encoder_decoder": true,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1,
+    "LABEL_2": 2
+  },
+  "length_penalty": 2.0,
+  "max_length": 142,
+  "max_position_embeddings": 1024,
+  "min_length": 56,
+  "model_type": "bart",
+  "no_repeat_ngram_size": 3,
+  "normalize_before": false,
+  "num_beams": 4,
+  "num_hidden_layers": 12,
+  "output_past": true,
+  "pad_token_id": 1,
+  "prefix": " ",
+  "scale_embedding": false,
+  "task_specific_params": {
+    "summarization": {
+      "early_stopping": true,
+      "length_penalty": 2.0,
+      "max_length": 142,
+      "min_length": 56,
+      "no_repeat_ngram_size": 3,
+      "num_beams": 4
+    }
+  },
+  "transformers_version": "4.22.1",
+  "use_cache": true,
+  "vocab_size": 50264
+}
+
+loading configuration file config.json from cache at C:\Users\gutti/.cache\huggingface\hub\models--facebook--bart-large-cnn\snapshots\c5121e42f57eca153aea31729f71cbedcd77a656\config.json
+Model config BartConfig {
+  "_num_labels": 3,
+  "activation_dropout": 0.0,
+  "activation_function": "gelu",
+  "add_final_layer_norm": false,
+  "architectures": [
+    "BartForConditionalGeneration"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 0,
+  "classif_dropout": 0.0,
+  "classifier_dropout": 0.0,
+  "d_model": 1024,
+  "decoder_attention_heads": 16,
+  "decoder_ffn_dim": 4096,
+  "decoder_layerdrop": 0.0,
+  "decoder_layers": 12,
+  "decoder_start_token_id": 2,
+  "dropout": 0.1,
+  "early_stopping": true,
+  "encoder_attention_heads": 16,
+  "encoder_ffn_dim": 4096,
+  "encoder_layerdrop": 0.0,
+  "encoder_layers": 12,
+  "eos_token_id": 2,
+  "force_bos_token_to_be_generated": true,
+  "forced_bos_token_id": 0,
+  "forced_eos_token_id": 2,
+  "gradient_checkpointing": false,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1",
+    "2": "LABEL_2"
+  },
+  "init_std": 0.02,
+  "is_encoder_decoder": true,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1,
+    "LABEL_2": 2
+  },
+  "length_penalty": 2.0,
+  "max_length": 142,
+  "max_position_embeddings": 1024,
+  "min_length": 56,
+  "model_type": "bart",
+  "no_repeat_ngram_size": 3,
+  "normalize_before": false,
+  "num_beams": 4,
+  "num_hidden_layers": 12,
+  "output_past": true,
+  "pad_token_id": 1,
+  "prefix": " ",
+  "scale_embedding": false,
+  "task_specific_params": {
+    "summarization": {
+      "early_stopping": true,
+      "length_penalty": 2.0,
+      "max_length": 142,
+      "min_length": 56,
+      "no_repeat_ngram_size": 3,
+      "num_beams": 4
+    }
+  },
+  "transformers_version": "4.22.1",
+  "use_cache": true,
+  "vocab_size": 50264
+}
+
+loading weights file pytorch_model.bin from cache at C:\Users\gutti/.cache\huggingface\hub\models--facebook--bart-large-cnn\snapshots\c5121e42f57eca153aea31729f71cbedcd77a656\pytorch_model.bin
+All model checkpoint weights were used when initializing BartForConditionalGeneration.
+
+All the weights of BartForConditionalGeneration were initialized from the model checkpoint at facebook/bart-large-cnn.
+If your task is similar to the task the model of the checkpoint was trained on, you can already use BartForConditionalGeneration for predictions without further training.
+[-3.5740389823913574, -2.309351682662964, -4.224774360656738, -4.977139949798584, -5.100462436676025, -4.5642900466918945, -4.1637444496154785, -4.444652557373047, -5.083889484405518, -3.8194525241851807, -4.408753395080566, -5.053022861480713, -3.0796408653259277, -4.417800426483154, -4.8606133460998535, -4.0999979972839355, -5.0759148597717285, -2.7480883598327637, -5.1431145668029785, -4.621205806732178, -2.711881637573242, -4.079651832580566, -3.140707015991211, -5.388291835784912, -4.796967029571533, -4.383153438568115, -5.052616119384766, -4.6555609703063965, -4.042660713195801, -3.82501482963562, -4.309262752532959, -4.168944358825684, -5.467618942260742, -5.216442584991455, -4.626741409301758, -5.275609016418457, -2.3690683841705322, -3.6724319458007812, -2.7987945079803467, -2.2738635540008545, -4.3878173828125, -4.587611675262451, -4.669291973114014, -5.053969860076904, -4.203834533691406, -1.5679707527160645, -3.3386073112487793, -5.120128631591797, -4.557417869567871, -3.6344876289367676, -4.570084571838379, -5.001205921173096, -4.967895984649658, -4.501030921936035, -4.772654056549072, -4.204972267150879, -3.2047977447509766, -2.130464553833008, -5.05673885345459, -3.925330400466919, -3.127236843109131, -4.687499046325684, -4.058346748352051, -1.545272707939148, -3.2614974975585938, -4.7983245849609375, -5.062221527099609, -4.188255786895752, -4.2885026931762695, -4.8494367599487305, -1.4688938856124878, -4.836738109588623, -3.1315603256225586, -4.64473819732666, -2.31939697265625, -0.4585095942020416, -3.527583599090576, -1.838594913482666, -4.810627460479736, -2.9243834018707275, -2.208120584487915, -4.36240816116333]
+Could not locate the tokenizer configuration file, will try to use the model config instead.
+loading configuration file config.json from cache at C:\Users\gutti/.cache\huggingface\hub\models--roberta-large\snapshots\5069d8a2a32a7df4c69ef9b56348be04152a2341\config.json
+Model config RobertaConfig {
+  "_name_or_path": "roberta-large",
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "classifier_dropout": null,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 1024,
+  "initializer_range": 0.02,
+  "intermediate_size": 4096,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 16,
+  "num_hidden_layers": 24,
+  "pad_token_id": 1,
+  "position_embedding_type": "absolute",
+  "transformers_version": "4.22.1",
+  "type_vocab_size": 1,
+  "use_cache": true,
+  "vocab_size": 50265
+}
+
+loading file vocab.json from cache at C:\Users\gutti/.cache\huggingface\hub\models--roberta-large\snapshots\5069d8a2a32a7df4c69ef9b56348be04152a2341\vocab.json
+loading file merges.txt from cache at C:\Users\gutti/.cache\huggingface\hub\models--roberta-large\snapshots\5069d8a2a32a7df4c69ef9b56348be04152a2341\merges.txt
+loading file added_tokens.json from cache at None
+loading file special_tokens_map.json from cache at None
+loading file tokenizer_config.json from cache at None
+loading configuration file config.json from cache at C:\Users\gutti/.cache\huggingface\hub\models--roberta-large\snapshots\5069d8a2a32a7df4c69ef9b56348be04152a2341\config.json
+Model config RobertaConfig {
+  "_name_or_path": "roberta-large",
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "classifier_dropout": null,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 1024,
+  "initializer_range": 0.02,
+  "intermediate_size": 4096,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 16,
+  "num_hidden_layers": 24,
+  "pad_token_id": 1,
+  "position_embedding_type": "absolute",
+  "transformers_version": "4.22.1",
+  "type_vocab_size": 1,
+  "use_cache": true,
+  "vocab_size": 50265
+}
+
+loading configuration file config.json from cache at C:\Users\gutti/.cache\huggingface\hub\models--roberta-large\snapshots\5069d8a2a32a7df4c69ef9b56348be04152a2341\config.json
+Model config RobertaConfig {
+  "_name_or_path": "roberta-large",
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "classifier_dropout": null,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 1024,
+  "initializer_range": 0.02,
+  "intermediate_size": 4096,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 16,
+  "num_hidden_layers": 24,
+  "pad_token_id": 1,
+  "position_embedding_type": "absolute",
+  "transformers_version": "4.22.1",
+  "type_vocab_size": 1,
+  "use_cache": true,
+  "vocab_size": 50265
+}
+
+loading weights file pytorch_model.bin from cache at C:\Users\gutti/.cache\huggingface\hub\models--roberta-large\snapshots\5069d8a2a32a7df4c69ef9b56348be04152a2341\pytorch_model.bin
+All the weights of RobertaModel were initialized from the model checkpoint at roberta-large.
+If your task is similar to the task the model of the checkpoint was trained on, you can already use RobertaModel for predictions without further training.
+Trainer is attempting to log a value of "[0.8939881324768066, 0.8917851448059082, 0.8795421719551086, 0.8746436834335327, 0.7797245979309082, 0.7505453824996948, 0.7481909394264221, 0.7537972927093506, 0.774842381477356, 0.8469308018684387, 0.8508971929550171, 0.7876068949699402, 0.9368197321891785, 0.8321044445037842, 0.8694769144058228, 0.8676995635032654, 0.8001015782356262, 0.8232355117797852, 0.7930193543434143, 0.7680426836013794, 0.8800144791603088, 0.7550460696220398, 0.8457199335098267, 0.875580906867981, 0.7725253105163574, 0.8048111796379089, 0.8027524352073669, 0.7705544829368591, 0.8298779726028442, 0.8951107859611511, 0.8617461323738098, 0.7663978338241577, 0.7667648792266846, 0.7550256252288818, 0.7600115537643433, 0.8609270453453064, 0.858473002910614, 0.8724919557571411, 0.9307546615600586, 0.8595263957977295, 0.8835083842277527, 0.8051432967185974, 0.7777389287948608, 0.7976797819137573, 0.8114191889762878, 0.8601656556129456, 0.8348472714424133, 0.7705947160720825, 0.8454011082649231, 0.8829798102378845, 0.8358728289604187, 0.7641080617904663, 0.8660158514976501, 0.8305925130844116, 0.8045358657836914, 0.7876695990562439, 0.8919208645820618, 0.8607238531112671, 0.7644065618515015, 0.8778671622276306, 0.9066323041915894, 0.877145528793335, 0.8652089238166809, 0.8730791807174683, 0.8892595767974854, 0.7632855772972107, 0.8243768215179443, 0.8651474714279175, 0.8902664184570312, 0.8273845911026001, 0.8595845699310303, 0.8583686947822571, 0.8799490928649902, 0.8829354643821716, 0.8585134148597717, 0.841027021408081, 0.798016369342804, 0.8526840806007385, 0.7656183242797852, 0.8772978186607361, 0.8809275031089783, 0.806535542011261]" of type <class 'list'> for key "eval/precision" as a scalar. This invocation of Tensorboard's writer.add_scalar() is incorrect so we dropped this attribute.
+Trainer is attempting to log a value of "[0.8918581008911133, 0.877855658531189, 0.8306102156639099, 0.8250638842582703, 0.8019152283668518, 0.8148658871650696, 0.8109407424926758, 0.8170650005340576, 0.8108657598495483, 0.8258389830589294, 0.8255631327629089, 0.8076722621917725, 0.8938653469085693, 0.8212519288063049, 0.8275197148323059, 0.831592321395874, 0.796047031879425, 0.8468589782714844, 0.8111274242401123, 0.8145370483398438, 0.8657650351524353, 0.8148693442344666, 0.8721790313720703, 0.8266810178756714, 0.8252725601196289, 0.8199714422225952, 0.8057193160057068, 0.8136006593704224, 0.8350089192390442, 0.8375800251960754, 0.8259022235870361, 0.809117317199707, 0.8028034567832947, 0.8076142072677612, 0.7918825745582581, 0.827370285987854, 0.8577938675880432, 0.8485446572303772, 0.9080188870429993, 0.8392425775527954, 0.8388216495513916, 0.8225058913230896, 0.8117799162864685, 0.8197876214981079, 0.8334115743637085, 0.8165891766548157, 0.8607138395309448, 0.8133353590965271, 0.8205267786979675, 0.8404136300086975, 0.80992192029953, 0.8146710395812988, 0.8144575357437134, 0.8312762975692749, 0.8167209625244141, 0.8139051198959351, 0.8436031341552734, 0.8452058434486389, 0.8014975190162659, 0.855155348777771, 0.8776342868804932, 0.827372670173645, 0.8351036906242371, 0.8660042881965637, 0.8669472336769104, 0.819206953048706, 0.8128522038459778, 0.8110085725784302, 0.8456424474716187, 0.8159402012825012, 0.8545935750007629, 0.8157321214675903, 0.8728054165840149, 0.8241679668426514, 0.8459376096725464, 0.8955797553062439, 0.8352677226066589, 0.8361577391624451, 0.8134240508079529, 0.8512205481529236, 0.8654056787490845, 0.8259609937667847]" of type <class 'list'> for key "eval/recall" as a scalar. This invocation of Tensorboard's writer.add_scalar() is incorrect so we dropped this attribute.
+Trainer is attempting to log a value of "[0.8929218053817749, 0.8847655653953552, 0.8543761968612671, 0.8491306900978088, 0.7906643152236938, 0.7813842296600342, 0.7783031463623047, 0.7841570973396301, 0.7924448847770691, 0.836251974105835, 0.8380387425422668, 0.7975133657455444, 0.9148386120796204, 0.8266425728797913, 0.8479796051979065, 0.8492622971534729, 0.798069179058075, 0.8348801136016846, 0.8019711971282959, 0.7906068563461304, 0.8728315830230713, 0.7838178873062134, 0.8587457537651062, 0.850428581237793, 0.7980282306671143, 0.8123205900192261, 0.8042331337928772, 0.791492760181427, 0.8324354887008667, 0.8653903007507324, 0.8434435129165649, 0.7871783971786499, 0.7843703627586365, 0.7804349660873413, 0.7756197452545166, 0.8438151478767395, 0.8581332564353943, 0.8603516817092896, 0.919246256351471, 0.8492633700370789, 0.8605852723121643, 0.8137319684028625, 0.7943949699401855, 0.808582603931427, 0.8222684264183044, 0.8378111124038696, 0.8475832343101501, 0.7913884520530701, 0.83277827501297, 0.8611710667610168, 0.8226927518844604, 0.7885798811912537, 0.8394457697868347, 0.8309342265129089, 0.8105826377868652, 0.8005725145339966, 0.8670893907546997, 0.8528942465782166, 0.7825127243995667, 0.866362452507019, 0.8918976783752441, 0.8515323996543884, 0.8498898148536682, 0.8695273399353027, 0.8779616951942444, 0.7902581691741943, 0.8185740113258362, 0.8372037410736084, 0.8673808574676514, 0.8216224908828735, 0.8570818901062012, 0.8365073800086975, 0.8763627409934998, 0.852540135383606, 0.8521791100502014, 0.8674465417861938, 0.8162172436714172, 0.8443400859832764, 0.7887974381446838, 0.864062488079071, 0.8730976581573486, 0.816132664680481]" of type <class 'list'> for key "eval/f1" as a scalar. This invocation of Tensorboard's writer.add_scalar() is incorrect so we dropped this attribute.
+Trainer is attempting to log a value of "roberta-large_L17_no-idf_version=0.3.11(hug_trans=4.22.1)" of type <class 'str'> for key "eval/hashcode" as a scalar. This invocation of Tensorboard's writer.add_scalar() is incorrect so we dropped this attribute.
+{'eval_loss': 4.063624858856201, 'eval_precision': [0.8939881324768066, 0.8917851448059082, 0.8795421719551086, 0.8746436834335327, 0.7797245979309082, 0.7505453824996948, 0.7481909394264221, 0.7537972927093506, 0.774842381477356, 0.8469308018684387, 0.8508971929550171, 0.7876068949699402, 0.9368197321891785, 0.8321044445037842, 0.8694769144058228, 0.8676995635032654, 0.8001015782356262, 0.8232355117797852, 0.7930193543434143, 0.7680426836013794, 0.8800144791603088, 0.7550460696220398, 0.8457199335098267, 0.875580906867981, 0.7725253105163574, 0.8048111796379089, 0.8027524352073669, 0.7705544829368591, 0.8298779726028442, 0.8951107859611511, 0.8617461323738098, 0.7663978338241577, 0.7667648792266846, 0.7550256252288818, 0.7600115537643433, 0.8609270453453064, 0.858473002910614, 0.8724919557571411, 0.9307546615600586, 0.8595263957977295, 0.8835083842277527, 0.8051432967185974, 0.7777389287948608, 0.7976797819137573, 0.8114191889762878, 0.8601656556129456, 0.8348472714424133, 0.7705947160720825, 0.8454011082649231, 0.8829798102378845, 0.8358728289604187, 0.7641080617904663, 0.8660158514976501, 0.8305925130844116, 0.8045358657836914, 0.7876695990562439, 0.8919208645820618, 0.8607238531112671, 0.7644065618515015, 0.8778671622276306, 0.9066323041915894, 0.877145528793335, 0.8652089238166809, 0.8730791807174683, 0.8892595767974854, 0.7632855772972107, 0.8243768215179443, 0.8651474714279175, 0.8902664184570312, 0.8273845911026001, 0.8595845699310303, 0.8583686947822571, 0.8799490928649902, 0.8829354643821716, 0.8585134148597717, 0.841027021408081, 0.798016369342804, 0.8526840806007385, 0.7656183242797852, 0.8772978186607361, 0.8809275031089783, 0.806535542011261], 'eval_recall': [0.8918581008911133, 0.877855658531189, 0.8306102156639099, 0.8250638842582703, 0.8019152283668518, 0.8148658871650696, 0.8109407424926758, 0.8170650005340576, 0.8108657598495483, 0.8258389830589294, 0.8255631327629089, 0.8076722621917725, 0.8938653469085693, 0.8212519288063049, 0.8275197148323059, 0.831592321395874, 0.796047031879425, 0.8468589782714844, 0.8111274242401123, 0.8145370483398438, 0.8657650351524353, 0.8148693442344666, 0.8721790313720703, 0.8266810178756714, 0.8252725601196289, 0.8199714422225952, 0.8057193160057068, 0.8136006593704224, 0.8350089192390442, 0.8375800251960754, 0.8259022235870361, 0.809117317199707, 0.8028034567832947, 0.8076142072677612, 0.7918825745582581, 0.827370285987854, 0.8577938675880432, 0.8485446572303772, 0.9080188870429993, 0.8392425775527954, 0.8388216495513916, 0.8225058913230896, 0.8117799162864685, 0.8197876214981079, 0.8334115743637085, 0.8165891766548157, 0.8607138395309448, 0.8133353590965271, 0.8205267786979675, 0.8404136300086975, 0.80992192029953, 0.8146710395812988, 0.8144575357437134, 0.8312762975692749, 0.8167209625244141, 0.8139051198959351, 0.8436031341552734, 0.8452058434486389, 0.8014975190162659, 0.855155348777771, 0.8776342868804932, 0.827372670173645, 0.8351036906242371, 0.8660042881965637, 0.8669472336769104, 0.819206953048706, 0.8128522038459778, 0.8110085725784302, 0.8456424474716187, 0.8159402012825012, 0.8545935750007629, 0.8157321214675903, 0.8728054165840149, 0.8241679668426514, 0.8459376096725464, 0.8955797553062439, 0.8352677226066589, 0.8361577391624451, 0.8134240508079529, 0.8512205481529236, 0.8654056787490845, 0.8259609937667847], 'eval_f1': [0.8929218053817749, 0.8847655653953552, 0.8543761968612671, 0.8491306900978088, 0.7906643152236938, 0.7813842296600342, 0.7783031463623047, 0.7841570973396301, 0.7924448847770691, 0.836251974105835, 0.8380387425422668, 0.7975133657455444, 0.9148386120796204, 0.8266425728797913, 0.8479796051979065, 0.8492622971534729, 0.798069179058075, 0.8348801136016846, 0.8019711971282959, 0.7906068563461304, 0.8728315830230713, 0.7838178873062134, 0.8587457537651062, 0.850428581237793, 0.7980282306671143, 0.8123205900192261, 0.8042331337928772, 0.791492760181427, 0.8324354887008667, 0.8653903007507324, 0.8434435129165649, 0.7871783971786499, 0.7843703627586365, 0.7804349660873413, 0.7756197452545166, 0.8438151478767395, 0.8581332564353943, 0.8603516817092896, 0.919246256351471, 0.8492633700370789, 0.8605852723121643, 0.8137319684028625, 0.7943949699401855, 0.808582603931427, 0.8222684264183044, 0.8378111124038696, 0.8475832343101501, 0.7913884520530701, 0.83277827501297, 0.8611710667610168, 0.8226927518844604, 0.7885798811912537, 0.8394457697868347, 0.8309342265129089, 0.8105826377868652, 0.8005725145339966, 0.8670893907546997, 0.8528942465782166, 0.7825127243995667, 0.866362452507019, 0.8918976783752441, 0.8515323996543884, 0.8498898148536682, 0.8695273399353027, 0.8779616951942444, 0.7902581691741943, 0.8185740113258362, 0.8372037410736084, 0.8673808574676514, 0.8216224908828735, 0.8570818901062012, 0.8365073800086975, 0.8763627409934998, 0.852540135383606, 0.8521791100502014, 0.8674465417861938, 0.8162172436714172, 0.8443400859832764, 0.7887974381446838, 0.864062488079071, 0.8730976581573486, 0.816132664680481], 'eval_hashcode': 'roberta-large_L17_no-idf_version=0.3.11(hug_trans=4.22.1)', 'eval_runtime': 2292.1109, 'eval_samples_per_second': 0.036, 'eval_steps_per_second': 0.012, 'epoch': 1.0}
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 108/108 [2:08:17<00:00, 35.12s/it]The following columns in the evaluation set don't have a corresponding argument in `BartForConditionalGeneration.forward` and have been ignored: review, meta_review, __index_level_0__. If review, meta_review, __index_level_0__ are not expected by `BartForConditionalGeneration.forward`,  you can safely ignore this message.        
+***** Running Evaluation *****
+  Num examples = 82
+  Batch size = 3
+                                                                                                                                                                    loading file vocab.json from cache at C:\Users\gutti/.cache\huggingface\hub\models--facebook--bart-large-cnn\snapshots\c5121e42f57eca153aea31729f71cbedcd77a656\vocab.json
+loading file merges.txt from cache at C:\Users\gutti/.cache\huggingface\hub\models--facebook--bart-large-cnn\snapshots\c5121e42f57eca153aea31729f71cbedcd77a656\merges.txt
+loading file added_tokens.json from cache at None
+loading file special_tokens_map.json from cache at None
+loading file tokenizer_config.json from cache at None
+loading configuration file config.json from cache at C:\Users\gutti/.cache\huggingface\hub\models--facebook--bart-large-cnn\snapshots\c5121e42f57eca153aea31729f71cbedcd77a656\config.json
+Model config BartConfig {
+  "_name_or_path": "facebook/bart-large-cnn",
+  "_num_labels": 3,
+  "activation_dropout": 0.0,
+  "activation_function": "gelu",
+  "add_final_layer_norm": false,
+  "architectures": [
+    "BartForConditionalGeneration"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 0,
+  "classif_dropout": 0.0,
+  "classifier_dropout": 0.0,
+  "d_model": 1024,
+  "decoder_attention_heads": 16,
+  "decoder_ffn_dim": 4096,
+  "decoder_layerdrop": 0.0,
+  "decoder_layers": 12,
+  "decoder_start_token_id": 2,
+  "dropout": 0.1,
+  "early_stopping": true,
+  "encoder_attention_heads": 16,
+  "encoder_ffn_dim": 4096,
+  "encoder_layerdrop": 0.0,
+  "encoder_layers": 12,
+  "eos_token_id": 2,
+  "force_bos_token_to_be_generated": true,
+  "forced_bos_token_id": 0,
+  "forced_eos_token_id": 2,
+  "gradient_checkpointing": false,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1",
+    "2": "LABEL_2"
+  },
+  "init_std": 0.02,
+  "is_encoder_decoder": true,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1,
+    "LABEL_2": 2
+  },
+  "length_penalty": 2.0,
+  "max_length": 142,
+  "max_position_embeddings": 1024,
+  "min_length": 56,
+  "model_type": "bart",
+  "no_repeat_ngram_size": 3,
+  "normalize_before": false,
+  "num_beams": 4,
+  "num_hidden_layers": 12,
+  "output_past": true,
+  "pad_token_id": 1,
+  "prefix": " ",
+  "scale_embedding": false,
+  "task_specific_params": {
+    "summarization": {
+      "early_stopping": true,
+      "length_penalty": 2.0,
+      "max_length": 142,
+      "min_length": 56,
+      "no_repeat_ngram_size": 3,
+      "num_beams": 4
+    }
+  },
+  "transformers_version": "4.22.1",
+  "use_cache": true,
+  "vocab_size": 50264
+}
+
+loading configuration file config.json from cache at C:\Users\gutti/.cache\huggingface\hub\models--facebook--bart-large-cnn\snapshots\c5121e42f57eca153aea31729f71cbedcd77a656\config.json
+Model config BartConfig {
+  "_num_labels": 3,
+  "activation_dropout": 0.0,
+  "activation_function": "gelu",
+  "add_final_layer_norm": false,
+  "architectures": [
+    "BartForConditionalGeneration"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 0,
+  "classif_dropout": 0.0,
+  "classifier_dropout": 0.0,
+  "d_model": 1024,
+  "decoder_attention_heads": 16,
+  "decoder_ffn_dim": 4096,
+  "decoder_layerdrop": 0.0,
+  "decoder_layers": 12,
+  "decoder_start_token_id": 2,
+  "dropout": 0.1,
+  "early_stopping": true,
+  "encoder_attention_heads": 16,
+  "encoder_ffn_dim": 4096,
+  "encoder_layerdrop": 0.0,
+  "encoder_layers": 12,
+  "eos_token_id": 2,
+  "force_bos_token_to_be_generated": true,
+  "forced_bos_token_id": 0,
+  "forced_eos_token_id": 2,
+  "gradient_checkpointing": false,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1",
+    "2": "LABEL_2"
+  },
+  "init_std": 0.02,
+  "is_encoder_decoder": true,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1,
+    "LABEL_2": 2
+  },
+  "length_penalty": 2.0,
+  "max_length": 142,
+  "max_position_embeddings": 1024,
+  "min_length": 56,
+  "model_type": "bart",
+  "no_repeat_ngram_size": 3,
+  "normalize_before": false,
+  "num_beams": 4,
+  "num_hidden_layers": 12,
+  "output_past": true,
+  "pad_token_id": 1,
+  "prefix": " ",
+  "scale_embedding": false,
+  "task_specific_params": {
+    "summarization": {
+      "early_stopping": true,
+      "length_penalty": 2.0,
+      "max_length": 142,
+      "min_length": 56,
+      "no_repeat_ngram_size": 3,
+      "num_beams": 4
+    }
+  },
+  "transformers_version": "4.22.1",
+  "use_cache": true,
+  "vocab_size": 50264
+}
+
+loading weights file pytorch_model.bin from cache at C:\Users\gutti/.cache\huggingface\hub\models--facebook--bart-large-cnn\snapshots\c5121e42f57eca153aea31729f71cbedcd77a656\pytorch_model.bin
+All model checkpoint weights were used when initializing BartForConditionalGeneration.
+
+All the weights of BartForConditionalGeneration were initialized from the model checkpoint at facebook/bart-large-cnn.
+If your task is similar to the task the model of the checkpoint was trained on, you can already use BartForConditionalGeneration for predictions without further training.
+[-3.4681313037872314, -2.108076810836792, -4.126211643218994, -4.89448881149292, -4.700944900512695, -4.05665397644043, -3.822185754776001, -3.8797543048858643, -4.472127914428711, -3.546041250228882, -4.060965061187744, -4.881702899932861, -2.8622350692749023, -4.300623416900635, -5.0493597984313965, -3.9846372604370117, -4.359251499176025, -2.5404722690582275, -4.776035308837891, -4.001612186431885, -2.758526563644409, -3.6722326278686523, -2.761874198913574, -5.3551483154296875, -4.129936695098877, -4.0801544189453125, -4.748716354370117, -4.1223835945129395, -3.7071480751037598, -3.7446374893188477, -4.235954761505127, -3.5992484092712402, -5.091551780700684, -4.455234050750732, -4.031442642211914, -5.193840980529785, -2.3778610229492188, -3.855947494506836, -2.6949007511138916, -2.267997980117798, -4.329626083374023, -4.2119364738464355, -3.9882266521453857, -4.690758228302002, -4.003319263458252, -1.3812826871871948, -3.086249828338623, -4.598874568939209, -4.180104732513428, -3.5981738567352295, -4.375812530517578, -4.39848518371582, -4.929178714752197, -4.3065032958984375, -4.451448917388916, -3.939201593399048, -3.101668119430542, -2.022815465927124, -4.347464084625244, -3.813504457473755, -2.6598265171051025, -4.62518310546875, -3.9878153800964355, -1.3360645771026611, -3.22564435005188, -4.292824745178223, -4.593217372894287, -3.6566097736358643, -4.304826736450195, -4.352706432342529, -1.5994963645935059, -4.598621845245361, -3.104138135910034, -4.502695083618164, -2.2414746284484863, -0.4465222656726837, -3.043499231338501, -1.8093674182891846, -4.463026523590088, -2.914698839187622, -2.135740280151367, -4.105079650878906]
+Trainer is attempting to log a value of "[0.8836299180984497, 0.8900671005249023, 0.8836701512336731, 0.8829403519630432, 0.8733803629875183, 0.8891510963439941, 0.8787980675697327, 0.8880574107170105, 0.8761986494064331, 0.8792102932929993, 0.8957065343856812, 0.8656396269798279, 0.8664834499359131, 0.8822277188301086, 0.8827229738235474, 0.8839722275733948, 0.8622692227363586, 0.8810387253761292, 0.8708999156951904, 0.9018934965133667, 0.8520902991294861, 0.8634859919548035, 0.8745076656341553, 0.8788185119628906, 0.901430070400238, 0.8891090154647827, 0.8722091913223267, 0.8819337487220764, 0.8846125602722168, 0.8952448964118958, 0.8843353390693665, 0.8708329200744629, 0.8663966059684753, 0.8677908778190613, 0.8827394247055054, 0.869158148765564, 0.8422176837921143, 0.8611705899238586, 0.8998346924781799, 0.8772135972976685, 0.879219651222229, 0.8866338133811951, 0.8766559958457947, 0.8927789926528931, 0.9022327661514282, 0.8679465055465698, 0.9187452793121338, 0.8755077719688416, 0.8711700439453125, 0.8856845498085022, 0.8540681004524231, 0.8818445801734924, 0.8691568970680237, 0.889670193195343, 0.8595122694969177, 0.8712925314903259, 0.9038235545158386, 0.8751493096351624, 0.8767759799957275, 0.8829711079597473, 0.8899313807487488, 0.8783167004585266, 0.8810397982597351, 0.8325283527374268, 0.8867629766464233, 0.8792042136192322, 0.8832594156265259, 0.8810688257217407, 0.8899725675582886, 0.8888890147209167, 0.8566229343414307, 0.8584895730018616, 0.8790566921234131, 0.887670636177063, 0.8726524114608765, 0.82220458984375, 0.8943305015563965, 0.8565614223480225, 0.8825300931930542, 0.9141632318496704, 0.862775444984436, 0.877311646938324]" of type <class 'list'> for key "eval/precision" as a scalar. This invocation of Tensorboard's writer.add_scalar() is incorrect so we dropped this attribute.
+Trainer is attempting to log a value of "[0.8718323707580566, 0.8051741719245911, 0.8382682800292969, 0.8347284197807312, 0.8286281824111938, 0.8444483280181885, 0.8324303030967712, 0.8377336263656616, 0.8280475735664368, 0.8420866131782532, 0.8433279395103455, 0.8242686986923218, 0.8417868614196777, 0.8403922915458679, 0.8318868279457092, 0.8427406549453735, 0.8179041147232056, 0.8625227212905884, 0.825174868106842, 0.8532439470291138, 0.8410713076591492, 0.8380420207977295, 0.8811755180358887, 0.825465738773346, 0.852540135383606, 0.8394771814346313, 0.827378511428833, 0.8344829678535461, 0.849341630935669, 0.8389871716499329, 0.8363110423088074, 0.8344124555587769, 0.8191319704055786, 0.8290395736694336, 0.813335120677948, 0.8349646329879761, 0.8090484738349915, 0.8246808052062988, 0.8750590682029724, 0.794585108757019, 0.8391222357749939, 0.8437451720237732, 0.8400328159332275, 0.8334079384803772, 0.8525038361549377, 0.8095958828926086, 0.8945099115371704, 0.8284374475479126, 0.8296471834182739, 0.8417727947235107, 0.81925368309021, 0.8387498259544373, 0.8333780765533447, 0.8482052683830261, 0.8338717222213745, 0.8352227210998535, 0.842128574848175, 0.7941231727600098, 0.8298156261444092, 0.8431634902954102, 0.8666031360626221, 0.8373879790306091, 0.8474608063697815, 0.7968120574951172, 0.8511226177215576, 0.8433638215065002, 0.8376423120498657, 0.829655647277832, 0.8392462134361267, 0.8432770371437073, 0.7904320955276489, 0.8279390335083008, 0.8757513761520386, 0.8348175883293152, 0.7862012982368469, 0.8976490497589111, 0.8437844514846802, 0.8074122071266174, 0.8268721103668213, 0.8720611333847046, 0.8691421747207642, 0.8405182957649231]" of type <class 'list'> for key "eval/recall" as a scalar. This invocation of Tensorboard's writer.add_scalar() is incorrect so we dropped this attribute.
+Trainer is attempting to log a value of "[0.8776915073394775, 0.8454951047897339, 0.8603706955909729, 0.8581578135490417, 0.8504159450531006, 0.8662233352661133, 0.8549859523773193, 0.8621618151664734, 0.851442813873291, 0.8602481484413147, 0.868728518486023, 0.8444477915763855, 0.8539566397666931, 0.8608019948005676, 0.8565512299537659, 0.8628641366958618, 0.839500904083252, 0.8716824054718018, 0.8474211096763611, 0.876894474029541, 0.8465449810028076, 0.850573718547821, 0.8778288960456848, 0.8513070940971375, 0.8763037919998169, 0.8635805249214172, 0.849202573299408, 0.8575524687767029, 0.8666183948516846, 0.8662035465240479, 0.8596529364585876, 0.8522337675094604, 0.8421016335487366, 0.8479726910591125, 0.8466172814369202, 0.8517183065414429, 0.8252999782562256, 0.8425307869911194, 0.8872739672660828, 0.8338574171066284, 0.8587031364440918, 0.864657998085022, 0.8579537272453308, 0.8620724081993103, 0.8766635656356812, 0.837756335735321, 0.9064656496047974, 0.8513224720954895, 0.8499017357826233, 0.8631705641746521, 0.8362987637519836, 0.8597574830055237, 0.8508915901184082, 0.8684430718421936, 0.8464978933334351, 0.8528763651847839, 0.8718860149383545, 0.832669734954834, 0.8526497483253479, 0.8626083135604858, 0.8781123161315918, 0.8573641777038574, 0.8639241456985474, 0.814278781414032, 0.8685773611068726, 0.8609111905097961, 0.859846293926239, 0.8545897006988525, 0.8638653755187988, 0.8654824495315552, 0.8221974968910217, 0.8429376482963562, 0.8774009346961975, 0.8604332208633423, 0.8271741271018982, 0.8582720756530762, 0.868322491645813, 0.8312610387802124, 0.853795051574707, 0.8926159739494324, 0.8659471273422241, 0.8585209250450134]" of type <class 'list'> for key "eval/f1" as a scalar. This invocation of Tensorboard's writer.add_scalar() is incorrect so we dropped this attribute.
+Trainer is attempting to log a value of "roberta-large_L17_no-idf_version=0.3.11(hug_trans=4.22.1)" of type <class 'str'> for key "eval/hashcode" as a scalar. This invocation of Tensorboard's writer.add_scalar() is incorrect so we dropped this attribute.
+{'eval_loss': 3.667274236679077, 'eval_precision': [0.8836299180984497, 0.8900671005249023, 0.8836701512336731, 0.8829403519630432, 0.8733803629875183, 0.8891510963439941, 0.8787980675697327, 0.8880574107170105, 0.8761986494064331, 0.8792102932929993, 0.8957065343856812, 0.8656396269798279, 0.8664834499359131, 0.8822277188301086, 0.8827229738235474, 0.8839722275733948, 0.8622692227363586, 0.8810387253761292, 0.8708999156951904, 0.9018934965133667, 0.8520902991294861, 0.8634859919548035, 0.8745076656341553, 0.8788185119628906, 0.901430070400238, 0.8891090154647827, 0.8722091913223267, 0.8819337487220764, 0.8846125602722168, 0.8952448964118958, 0.8843353390693665, 0.8708329200744629, 0.8663966059684753, 0.8677908778190613, 0.8827394247055054, 0.869158148765564, 0.8422176837921143, 0.8611705899238586, 0.8998346924781799, 0.8772135972976685, 0.879219651222229, 0.8866338133811951, 0.8766559958457947, 0.8927789926528931, 0.9022327661514282, 0.8679465055465698, 0.9187452793121338, 0.8755077719688416, 0.8711700439453125, 0.8856845498085022, 0.8540681004524231, 0.8818445801734924, 0.8691568970680237, 0.889670193195343, 0.8595122694969177, 0.8712925314903259, 0.9038235545158386, 0.8751493096351624, 0.8767759799957275, 0.8829711079597473, 0.8899313807487488, 0.8783167004585266, 0.8810397982597351, 0.8325283527374268, 0.8867629766464233, 0.8792042136192322, 0.8832594156265259, 0.8810688257217407, 0.8899725675582886, 0.8888890147209167, 0.8566229343414307, 0.8584895730018616, 0.8790566921234131, 0.887670636177063, 0.8726524114608765, 0.82220458984375, 0.8943305015563965, 0.8565614223480225, 0.8825300931930542, 0.9141632318496704, 0.862775444984436, 0.877311646938324], 'eval_recall': [0.8718323707580566, 0.8051741719245911, 0.8382682800292969, 0.8347284197807312, 0.8286281824111938, 0.8444483280181885, 0.8324303030967712, 0.8377336263656616, 0.8280475735664368, 0.8420866131782532, 0.8433279395103455, 0.8242686986923218, 0.8417868614196777, 0.8403922915458679, 0.8318868279457092, 0.8427406549453735, 0.8179041147232056, 0.8625227212905884, 0.825174868106842, 0.8532439470291138, 0.8410713076591492, 0.8380420207977295, 0.8811755180358887, 0.825465738773346, 0.852540135383606, 0.8394771814346313, 0.827378511428833, 0.8344829678535461, 0.849341630935669, 0.8389871716499329, 0.8363110423088074, 0.8344124555587769, 0.8191319704055786, 0.8290395736694336, 0.813335120677948, 0.8349646329879761, 0.8090484738349915, 0.8246808052062988, 0.8750590682029724, 0.794585108757019, 0.8391222357749939, 0.8437451720237732, 0.8400328159332275, 0.8334079384803772, 0.8525038361549377, 0.8095958828926086, 0.8945099115371704, 0.8284374475479126, 0.8296471834182739, 0.8417727947235107, 0.81925368309021, 0.8387498259544373, 0.8333780765533447, 0.8482052683830261, 0.8338717222213745, 0.8352227210998535, 0.842128574848175, 0.7941231727600098, 0.8298156261444092, 0.8431634902954102, 0.8666031360626221, 0.8373879790306091, 0.8474608063697815, 0.7968120574951172, 0.8511226177215576, 0.8433638215065002, 0.8376423120498657, 0.829655647277832, 0.8392462134361267, 0.8432770371437073, 0.7904320955276489, 0.8279390335083008, 0.8757513761520386, 0.8348175883293152, 0.7862012982368469, 0.8976490497589111, 0.8437844514846802, 0.8074122071266174, 0.8268721103668213, 0.8720611333847046, 0.869142174
+{'train_runtime': 9725.4749, 'train_samples_per_second': 0.067, 'train_steps_per_second': 0.011, 'train_loss': 5.496196605541088, 'epoch': 2.0}100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 108/108 [2:42:05<00:00, 90.05s/it] Saving model checkpoint to models/trainerConfiguration saved in models/trainer\config.jsonModel weights saved in models/trainer\pytorch_model.bintokenizer config file saved in models/trainer\tokenizer_config.jsonSpecial tokens file saved in models/trainer\special_tokens_map.jsonPS C:\Users\gutti\Documents\NLP\NLP_Works\Project>

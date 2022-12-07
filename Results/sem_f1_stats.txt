@@ -1,0 +1,16 @@
+
+ BART Without fine tuning: 
+{'sem_f1_score': 0.3698350547250946}
+ BART With fine tuning: 
+{'sem_f1_score': 0.4371321805725346}
+ Pegasus With fine tuning: 
+{'sem_f1_score': 0.3853519666681105}
+ Pegasus Without fine tuning: 
+{'sem_f1_score': 0.382543182683098}
+
+ T5 Without fine tuning: 
+{'sem_f1_score': 0.32387902577331507}
+ T5 Without fine tuning1: 
+{'sem_f1_score': 0.3274903184301015}
+ T5 With fine tuning1: 
+{'sem_f1_score': 0.37311414707029517}
